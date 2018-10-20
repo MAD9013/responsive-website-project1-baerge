@@ -137,7 +137,7 @@ footer{
     
 }
 .foot dt{
-margin: 10px 10px;
+margin: 10px;
 list-style-type: none;
 display: block;
 padding: 8px 12px;
@@ -172,6 +172,7 @@ text-transform: uppercase;
     color: white;
     
 }
+<<<<<<< HEAD
 
 /* Media Queries */
 @media (max-width: 700px) {
@@ -212,3 +213,5 @@ text-transform: uppercase;
 
     }
 }
+=======
+>>>>>>> 8d1470771155ce36f922f1d9d9b116151d318c6a
