@@ -13,12 +13,6 @@ html{
     font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida,;
 }
 
-body {
-    background: #ccc;
-    margin: 30px 50px;
-    line-height: 1.4;
-}
-
 h1, h2{
     /*font-family: font stack required for headings */
      font-family:Georgia, serif;
@@ -74,7 +68,6 @@ header.mast h2{
     color:#000;
 }
 
-/* MAIN CONTENT */
 main{
     background: var(--primary);
     text-align: center;
@@ -83,11 +76,7 @@ main{
     left: 0;
     width: 100%;
 }
-.first .segment{
-    color: red;
-}
-
-section{
+section {
     display:block;
     padding: 14px 16px;
     background: var(--primary);
@@ -120,23 +109,32 @@ footer{
     text-align: center;
     margin: 10px 10px;
     
+    
       
 }
 .foot section{
-    float: right;
-    display: block;
-    margin: 2rem;
-    width: 600px;
-    text-align: center;
-    border: 1px  solid #555;
-    background-color: whitesmoke;
-    padding: 14px 18px;
+    width: 100%;
+    border-radius: 4px;
+    resize: vertical;
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.foot input[type=send]:hover {
+    background-color: #45a049;
+
+}
    
   
-}
+
 .foot dl{
    padding: 1.5rem 2rem; 
     margin: 10px 10px;  
+    
 }
 .foot dt{
 margin: 10px 10px;
@@ -151,6 +149,7 @@ text-transform: uppercase;
     padding: 0;
     border: 1px solid #555;
     background-color: #3a3838;
+    border: 1px solid #ddd;
     
 }
 .foot dd a,
@@ -169,7 +168,47 @@ text-transform: uppercase;
 .foot dd a:active,
 .foot dd a:focus,
 .foot dd a:hover{
-   background-color:green;
+   background-color: royalblue;
     color: white;
     
+}
+
+/* Media Queries */
+@media (max-width: 700px) {
+    .primary {
+        .section:
+        'first segment'
+        'second segment minor-segment'
+        'third segment minor-segment';
+        
+    
+    }
+
+    .showcase h1 {
+        font-size: 2.5rem;
+    }
+
+    .main-nav ul {
+        grid-template-columns: 1fr;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .info .btn {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .top-container {
+        grid-template-areas:
+        'showcase'
+        'top-box-a'
+        'top-box-b';
+
+    }
 }
