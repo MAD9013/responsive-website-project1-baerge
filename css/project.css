@@ -80,15 +80,17 @@ header.mast h2{
 main{
     text-align: center;
     padding: 1.5rem 2rem;
-    display: flex;
+   display: flex;
     left: 0;
     width: 100%;
+    z-index:2;
 }
 section {
-    display:block;
     padding: 14px 16px;
     text-align: center;
     padding: 1.5rem 2rem;
+    
+    
 }
 section p{
   font-size: 1.3rem;
@@ -135,8 +137,6 @@ footer{
 
 }
    
-  
-
 .foot dl{
    padding: 1.5rem 2rem; 
     margin: 10px 10px;  
@@ -168,8 +168,7 @@ text-transform: uppercase;
     text-align: center;
     text-decoration: none;
     box-shadow: var(--shadow)
-  
-     
+    
 }
 .foot dd a:active,
 .foot dd a:focus,
