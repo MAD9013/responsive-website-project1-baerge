@@ -6,11 +6,16 @@
     box-sizing: border-box;
 }
 html{
-    background: #ccc;
     font-size: 16px;
     line-height: 1.6;
     /*font-family: font stack required for body text */
     font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida,;
+}
+
+body {
+    background: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4;
 }
 
 h1, h2{
@@ -45,31 +50,34 @@ header.mast h2{
 
 }
 .mainnav{
+    display: flex;
     overflow: hidden;
-    background-color: #333;
+    margin: 1px;
     
 }
 
 .mainnav a{
+    border-radius: 25px;
+    background-color: #333;
+    border: 1px solid white;
     display: block;
     width: 20%;
     float: left;
-    font-size: 16px;
+    font-size: 14px;
     color:white;
+    margin: 2px;
     text-align: center;
     text-transform: uppercase;
     padding: 13px 15px;
     text-decoration: none;
-    box-shadow: var(--shadow); 
 }
 
 .mainnav a:hover{
-    background-color:green;
+    background-color: dimgray;
     color:#000;
 }
 
 main{
-    background: var(--primary);
     text-align: center;
     padding: 1.5rem 2rem;
     display: flex;
@@ -79,7 +87,6 @@ main{
 section {
     display:block;
     padding: 14px 16px;
-    background: var(--primary);
     text-align: center;
     padding: 1.5rem 2rem;
 }
@@ -93,7 +100,6 @@ section p{
     width: 100%;
     height: auto;
     padding: 14px 16px;
-    box-shadow: var(--shadow);
 }
 
 /*FOOTER*/
@@ -172,46 +178,30 @@ text-transform: uppercase;
     color: white;
     
 }
-<<<<<<< HEAD
 
 /* Media Queries */
-@media (max-width: 700px) {
-    .primary {
-        .section:
-        'first segment'
-        'second segment minor-segment'
-        'third segment minor-segment';
-        
-    
+@media only screen and (max-width: 700px) {
+    .mainnav{
+        display: grid;
+         width: 100%;
+         padding: 0;
     }
-
-    .showcase h1 {
-        font-size: 2.5rem;
-    }
-
-    .main-nav ul {
-        grid-template-columns: 1fr;
-    }
-
-    .info {
-        grid-template-columns: 1fr;
-    }
-
-    .info .btn {
+    main{
         display: block;
-        text-align: center;
-        margin: auto;
+        width: 100%;
+        padding: 0;
+    }
+    footer{
+        display: block;
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width:600px) {
+    .mainnav a,
+    .section,
+    .footer section, .foot nav {
+         display: block;
+        width: 100%;
     }
 }
-
-@media (max-width: 500px) {
-    .top-container {
-        grid-template-areas:
-        'showcase'
-        'top-box-a'
-        'top-box-b';
-
-    }
-}
-=======
->>>>>>> 8d1470771155ce36f922f1d9d9b116151d318c6a
